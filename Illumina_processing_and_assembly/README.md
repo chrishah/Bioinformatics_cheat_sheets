@@ -5,7 +5,7 @@ In the following we will detail the usage of some commonly used tools associated
 The commands below assume that you have Docker installed.
 
 ***Note***
-Generally, I have designed the commands so that the first three lines are instructions to docker and all following lines refer to the actual piece of software in the container, so if you happend to have the particular software installed globally on your machine, it should also work if you simply ommit the first three lines of the commands.
+> Generally, I have designed the commands so that the first three lines are instructions to docker and all following lines refer to the actual piece of software in the container, so if you happend to have the particular software installed globally on your machine, it should also work if you simply ommit the first three lines of the commands.
 
 
 ## [Trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic) - a tool for Illumina data quality trimming
