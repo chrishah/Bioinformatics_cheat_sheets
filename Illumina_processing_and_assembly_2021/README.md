@@ -107,7 +107,6 @@ Note that Platanus does not accept gzipped data and we'd need to decompress our 
 First create a directory to which all Platanus files will go.
 ```bash
 mkdir Platanus
-cd Platanus
 ```
 Now do the assembly - Note that Platanus has three modules that need to be run consecutively.
 ```bash
