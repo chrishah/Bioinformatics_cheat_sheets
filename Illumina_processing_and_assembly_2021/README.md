@@ -8,6 +8,16 @@ The commands below assume that you have Docker installed.
 > Generally, I have designed the commands so that the first three lines are instructions to docker and all following lines refer to the actual piece of software in the container, so if you happend to have the particular software installed globally on your machine, it should also work if you simply ommit the first three lines of the commands. Just make sure you adjust the paths to your input files.
 
 
+## [Trim Galore](https://github.com/FelixKrueger/TrimGalore) - a tool for Illumina data quality trimming
+The command assumes that your read data (`reads.1.fastq.gz` and `reads.2.fastq.gz`) are present in your present working directory.
+```bash
+docker run \
+--rm -v $(pwd):/in -w /in \
+chrishah/trim_galore:0.6.0 \
+trim_galore --paired --length 70 -r1 71 -r2 71 --retain_unpaired --stringency 2 --quality 30 reads.1.fastq.gz reads.2.fastq.gz   
+```
+
+
 ## [Trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic) - a tool for Illumina data quality trimming
 
 The command assumes that your read data (`reads.1.fastq.gz` and `reads.2.fastq.gz`) are present in your present working directory.
